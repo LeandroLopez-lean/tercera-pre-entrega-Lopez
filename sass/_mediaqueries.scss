@@ -1,0 +1,34 @@
+@media (max-width: 780px) {
+	.gridPadre {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		margin: 0;
+		display: grid;
+		grid-template-areas:
+			"header header"
+			"aside primero"
+			"aside primero"
+			"aside segundo"
+			"aside tercero"
+			"footer footer";
+	}
+}
+
+@media (max-width: 520px) {
+	.gridPadre {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		display: grid;
+		grid-template-areas:
+			"header"
+			"aside"
+			"primero"
+			"segundo"
+			"tercero"
+			"footer";
+	}
+
+	aside {
+		display: none;
+	}
+}

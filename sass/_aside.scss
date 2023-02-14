@@ -1,0 +1,13 @@
+/* ASIDE CON MIXIN*/
+
+aside {
+	font-size: large;
+	grid-area: aside;
+	border: 1px black solid;
+	width: 100%;
+	height: 100%;
+	background-color: $background-color_3;
+	margin: 0px;
+	padding: 10px;
+	@include parrafo;
+}

@@ -1,0 +1,148 @@
+/*BASE y el @import roboto para la descripcion*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: bisque;
+  width: 100%;
+  height: 100%;
+}
+
+/*MIXIN*/
+/*HEADER*/
+header {
+  margin: 0;
+  background-color: darkgray;
+  grid-area: header;
+  border-bottom: black 2px solid;
+}
+header .portada {
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  border-bottom: black 2px solid;
+}
+header h1 {
+  text-align: center;
+  color: sienna;
+}
+header p {
+  text-align: center;
+  text-decoration: underline black 2px;
+}
+
+/* PRODUCTOS*/
+.primero {
+  width: auto;
+  margin: 5px;
+  grid-area: primero;
+}
+
+.segundo {
+  width: auto;
+  margin: 2px;
+  grid-area: segundo;
+}
+
+.tercero {
+  width: auto;
+  margin: 0px 10px 0px 0px;
+  grid-area: tercero;
+}
+
+/* art son las propiedades de las imagenes*/
+.art {
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 1px black solid;
+}
+.art:hover {
+  height: 225px;
+  transition-duration: 1s;
+}
+
+.foto {
+  margin: 10px;
+  border: 2px solid #444;
+}
+
+/* la descripcion de las fotos con roboto*/
+.descripcion {
+  text-align: center;
+  font-size: 30px;
+  font-family: "roboto";
+}
+
+/* ASIDE CON MIXIN*/
+aside {
+  font-size: large;
+  grid-area: aside;
+  border: 1px black solid;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline black 2px;
+}
+
+footer {
+  grid-area: footer;
+  margin: 0px;
+  text-align: center;
+  font-size: 30px;
+  background-color: coral;
+  color: aliceblue;
+}
+
+/* REDES */
+.redes {
+  height: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.gridPadre {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 1fr;
+  grid-template-rows: 500px 1fr 250px;
+  grid-template-areas: "header header header header" "aside primero segundo tercero" "footer footer footer footer";
+}
+
+@media (max-width: 780px) {
+  .gridPadre {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header header" "aside primero" "aside primero" "aside segundo" "aside tercero" "footer footer";
+  }
+}
+@media (max-width: 520px) {
+  .gridPadre {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-areas: "header" "aside" "primero" "segundo" "tercero" "footer";
+  }
+  aside {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+.gridPadre {
+	display: grid;
+	grid-template-columns: 300px 1fr 1fr 1fr;
+	grid-template-rows: 500px 1fr 250px;
+	grid-template-areas:
+		"header header header header"
+		"aside primero segundo tercero"
+		"footer footer footer footer";
+}
