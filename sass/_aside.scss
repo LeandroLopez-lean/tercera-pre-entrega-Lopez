@@ -9,5 +9,31 @@ aside {
 	background-color: $background-color_3;
 	margin: 0px;
 	padding: 10px;
-	@include parrafo;
+
+	h2 {
+		@include parrafo;
+	}
+
+	button {
+		width: 100px;
+		margin: 20px 30%;
+	}
+
+	img {
+		background-color: aliceblue;
+		width: 250px;
+		height: 150;
+	}
+
+	.publicidad {
+		margin-top: 30px;
+		@include parrafo;
+	}
+}
+
+.info {
+	margin-bottom: 15px;
+}
+.video{
+	width: 98%;
 }

@@ -1,7 +1,7 @@
 @media (max-width: 780px) {
 	.gridPadre {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 500px 300 1fr 1fr 1fr 1fr;
 		margin: 0;
 		display: grid;
 		grid-template-areas:
@@ -17,7 +17,7 @@
 @media (max-width: 520px) {
 	.gridPadre {
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 500px 1fr 1fr 1fr 1fr;
 		display: grid;
 		grid-template-areas:
 			"header"
@@ -28,7 +28,4 @@
 			"footer";
 	}
 
-	aside {
-		display: none;
-	}
 }
