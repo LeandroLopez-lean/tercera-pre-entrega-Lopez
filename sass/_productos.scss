@@ -20,10 +20,9 @@
 
 /* art son las propiedades de las imagenes*/
 .art {
-	margin: 0;
 	width: 200px;
 	height: 200px;
-	margin: 20px;
+	margin: 40px;
 	border: 1px black solid;
 
 	&:hover {
@@ -33,7 +32,7 @@
 }
 
 .foto {
-	margin: 10px;
+	margin: 0;
 	border: 2px solid #444;
 }
 
